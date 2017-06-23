@@ -1,6 +1,6 @@
 # phantomjs-static-2.5
 
-Static build of [PhantomJS 2.5 beta](https://github.com/ariya/phantomjs/issues/14458)
+Static build of [PhantomJS 2.5 beta](https://github.com/ariya/phantomjs/issues/14458) / [features](https://gist.github.com/macbre/03efa4479ab80dca4437)
 
 ```bash
 $ wget http://ftp.pl.debian.org/debian/pool/main/libj/libjpeg8/libjpeg8_8d1-2_amd64.deb && sudo dpkg -i libjpeg8_8d1-2_amd64.deb
