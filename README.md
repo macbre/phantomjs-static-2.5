@@ -23,6 +23,13 @@ $ ldd phantomjs25-static
 	libcrypto.so.1.0.0 => /usr/lib/x86_64-linux-gnu/libcrypto.so.1.0.0 (0x00007f84de5bf000)
 $ ./phantomjs25-static --version
 2.5.0-development
+
+phantomjs> phantom.version
+{
+   "major": 2,
+   "minor": 5,
+   "patch": 0
+}
 ```
 
 ```bash
