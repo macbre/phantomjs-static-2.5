@@ -3,11 +3,12 @@
 Static build of [PhantomJS 2.5 beta](https://github.com/ariya/phantomjs/issues/14458)
 
 ```bash
-macbre@sphinx:~/src$ ldd phantomjs25-static 
+$ wget http://ftp.pl.debian.org/debian/pool/main/libj/libjpeg8/libjpeg8_8d1-2_amd64.deb && sudo dpkg -i libjpeg8_8d1-2_amd64.deb
+$ ldd phantomjs25-static 
 	linux-vdso.so.1 (0x00007ffef47ce000)
 	libfontconfig.so.1 => /usr/lib/x86_64-linux-gnu/libfontconfig.so.1 (0x00007f84e042d000)
 	libfreetype.so.6 => /usr/lib/x86_64-linux-gnu/libfreetype.so.6 (0x00007f84e0183000)
-	libjpeg.so.8 => not found
+	libjpeg.so.8 => /usr/lib/x86_64-linux-gnu/libjpeg.so.8 (0x00007f2c462ae000)
 	libssl.so.1.0.0 => /usr/lib/x86_64-linux-gnu/libssl.so.1.0.0 (0x00007f84dff21000)
 	libz.so.1 => /lib/x86_64-linux-gnu/libz.so.1 (0x00007f84dfd06000)
 	libdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2 (0x00007f84dfb01000)
@@ -20,10 +21,12 @@ macbre@sphinx:~/src$ ldd phantomjs25-static
 	libexpat.so.1 => /lib/x86_64-linux-gnu/libexpat.so.1 (0x00007f84debe2000)
 	libpng12.so.0 => /lib/x86_64-linux-gnu/libpng12.so.0 (0x00007f84de9bb000)
 	libcrypto.so.1.0.0 => /usr/lib/x86_64-linux-gnu/libcrypto.so.1.0.0 (0x00007f84de5bf000)
+$ ./phantomjs25-static --version
+2.5.0-development
 ```
 
 ```bash
-macbre@sphinx:~/src$ ldd phantomjs211-static 
+$ ldd phantomjs211-static 
 	linux-vdso.so.1 (0x00007ffe2a360000)
 	libz.so.1 => /lib/x86_64-linux-gnu/libz.so.1 (0x00007f8f82c88000)
 	libfontconfig.so.1 => /usr/lib/x86_64-linux-gnu/libfontconfig.so.1 (0x00007f8f82a4b000)
