@@ -3,7 +3,7 @@
 Static build of [PhantomJS 2.5 beta](https://github.com/ariya/phantomjs/issues/14458) / [features](https://gist.github.com/macbre/03efa4479ab80dca4437)
 
 ```bash
-$ wget http://ftp.pl.debian.org/debian/pool/main/libj/libjpeg8/libjpeg8_8d1-2_amd64.deb && sudo dpkg -i libjpeg8_8d1-2_amd64.deb
+$ wget http://ftp.pl.debian.org/debian/pool/main/libj/libjpeg8/libjpeg8_8d-1+deb7u1_amd64.deb && sudo dpkg -i libjpeg8_8d-1+deb7u1_amd64.deb
 $ ldd phantomjs25-static 
 	linux-vdso.so.1 (0x00007ffef47ce000)
 	libfontconfig.so.1 => /usr/lib/x86_64-linux-gnu/libfontconfig.so.1 (0x00007f84e042d000)
